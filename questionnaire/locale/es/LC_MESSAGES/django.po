@@ -1,0 +1,207 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-11-22 22:37-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.py:54
+msgid "Download data"
+msgstr "Descargar datos"
+
+#: admin.py:57
+msgid "Export to CSV"
+msgstr "Exportar a CSV"
+
+#: models.py:16
+msgid "Active"
+msgstr "Activo"
+
+#: models.py:17
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: models.py:22
+msgid "State"
+msgstr "Estado"
+
+#: models.py:24
+msgid "Surname"
+msgstr "Apellido"
+
+#: models.py:26
+msgid "Given name"
+msgstr "Nombre"
+
+#: models.py:27
+msgid "Email"
+msgstr "Correo"
+
+#: models.py:29
+msgid "Gender"
+msgstr "Género"
+
+#: models.py:30
+msgid "Unset"
+msgstr "No definido"
+
+#: models.py:31
+msgid "Male"
+msgstr "Masculino"
+
+#: models.py:32
+msgid "Female"
+msgstr "Femenino"
+
+#: models.py:35
+msgid "Next Run"
+msgstr "Siguiente"
+
+#: models.py:37
+msgid "Form Type"
+msgstr "Tipo de formulario"
+
+#: models.py:39
+msgid "Subject receives emails"
+msgstr "Sujeto recibe correos"
+
+#: models.py:40
+msgid "Subject is sent paper form"
+msgstr "Sujeto recibe papel impreso"
+
+#: models.py:43
+msgid "Language"
+msgstr "Lenguaje"
+
+#: models.py:277
+msgid "Text"
+msgstr "Texto"
+
+#: qprocessors/choice.py:38 qprocessors/simple.py:71
+msgid "You must select an option"
+msgstr "Debe seleccionar una opción"
+
+#: qprocessors/choice.py:42 qprocessors/range_or_number.py:45
+#: qprocessors/simple.py:75 qprocessors/simple.py:77 qprocessors/simple.py:79
+#: qprocessors/simple.py:82 qprocessors/timeperiod.py:56
+msgid "Field cannot be blank"
+msgstr "Campo requerido"
+
+#: qprocessors/choice.py:47
+msgid "Invalid option!"
+msgstr "Opción inválida!"
+
+#: qprocessors/choice.py:109
+#, python-format
+msgid "You must select at least %d option"
+msgid_plural "You must select at least %d options"
+msgstr[0] "Debe seleccionar al menos %d opción"
+msgstr[1] "Debe seleccionar al menos %d opciones"
+
+#: qprocessors/custom.py:27
+msgid "Processor not defined for this question"
+msgstr "No hay un procesador definido para esta pregunta"
+
+#: qprocessors/range_or_number.py:52
+msgid "Could not convert the number"
+msgstr "No se pudo convertir a número"
+
+#: qprocessors/range_or_number.py:55
+msgid "Out of range"
+msgstr "Fuera del rango"
+
+#: qprocessors/timeperiod.py:5
+msgid "second(s)"
+msgstr "segundo(s)"
+
+#: qprocessors/timeperiod.py:6
+msgid "minute(s)"
+msgstr "minuto(s)"
+
+#: qprocessors/timeperiod.py:7
+msgid "hour(s)"
+msgstr "hora(s)"
+
+#: qprocessors/timeperiod.py:8
+msgid "day(s)"
+msgstr "día(s)"
+
+#: qprocessors/timeperiod.py:9
+msgid "week(s)"
+msgstr "semana(s)"
+
+#: qprocessors/timeperiod.py:10
+msgid "month(s)"
+msgstr "mes(es)"
+
+#: qprocessors/timeperiod.py:11
+msgid "year(s)"
+msgstr "año(s)"
+
+#: qprocessors/timeperiod.py:42 qprocessors/timeperiod.py:58
+msgid "Invalid time period"
+msgstr "Periodo de tiempo inálido"
+
+#: qprocessors/timeperiod.py:48
+msgid "Time period must be a whole number"
+msgstr "Periodo de tiempo debe ser número entero"
+
+#: templates/admin/questionnaire/question/change_form.html:10
+msgid "Choices"
+msgstr "Opciones"
+
+#: templates/admin/questionnaire/question/change_form.html:12
+msgid "Sortid determines the choice order."
+msgstr "Sortid determina el orden de la opción."
+
+#: templates/admin/questionnaire/question/change_form.html:13
+msgid ""
+"Short values will appear in exported data and are \n"
+"referenced in 'Additional checks' fields.  Numbers, letters \n"
+"or single words are valid."
+msgstr ""
+
+#: templates/questionnaire/choice-yesnocomment.html:10 views.py:904
+msgid "Yes"
+msgstr "Sí"
+
+#: templates/questionnaire/choice-yesnocomment.html:18 views.py:904
+msgid "No"
+msgstr "No"
+
+#: templates/questionnaire/choice-yesnocomment.html:27 views.py:906
+msgid "Don't Know"
+msgstr "No sé"
+
+#: templates/questionnaire/choice-yesnocomment.html:35
+msgid "comment"
+msgstr "comentar"
+
+#: templates/questionnaire/questionset.html:61
+msgid "edit"
+msgstr "edita"
+
+#: templates/questionnaire/questionset.html:98
+msgid "Continue"
+msgstr "Continuar"
+
+#: templates/questionnaire/questionset.html:98
+msgid "Save"
+msgstr "Guardar"
+
+#: templates/questionnaire/questionset.html:103
+msgid "return to previous page"
+msgstr "regresar"

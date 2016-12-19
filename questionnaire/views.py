@@ -517,7 +517,9 @@ def finish_questionnaire(request, runinfo, questionnaire):
     commit()
     if redirect_url:
         return HttpResponseRedirect(redirect_url)
-    return r2r("questionnaire/complete.$LANG.html", request)
+    #return r2r("questionnaire/complete.$LANG.html", request)
+    return r2r("questionnaire/complete." + translation.get_language() + ".html", request)
+
 
 
 def show_questionnaire(request, runinfo, errors={}):

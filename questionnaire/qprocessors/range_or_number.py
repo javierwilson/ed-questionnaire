@@ -6,12 +6,14 @@ from json import dumps
 @question_proc('range', 'number')
 def question_range_or_number(request, question):
     cd = question.getcheckdict()
-    
+
     rmin, rmax = parse_range(cd)
     rstep = parse_step(cd)
     runit = cd.get('unit', '')
-    
-    current = request.POST.get('question_%s' % question.number, rmin)   
+
+    current = request.POST.get('question_%s' % question.number, rmin)
+    if current == "0":
+        current = ""
 
     jsinclude = []
     if question.type == 'range':
@@ -39,6 +41,7 @@ def process_range_or_number(question, answer):
 
     ans = answer['ANSWER']
     if not ans:
+        return [] # javier FIXME always allows blank (no number, for example: no age)
         if question.is_required():
             raise AnswerException(_(u"Field cannot be blank"))
         else:
@@ -48,7 +51,7 @@ def process_range_or_number(question, answer):
         ans = convert(ans)
     except:
        raise AnswerException(_(u"Could not convert the number"))
-    
+
     if ans > convert(rmax) or ans < convert(rmin):
         raise AnswerException(_(u"Out of range"))
 
@@ -60,12 +63,12 @@ add_type('number', 'Number [input]')
 def parse_range(checkdict):
     "Given a checkdict for a range widget return the min and max string values."
 
-    Range = checkdict.get('range', '1-5')
+    Range = checkdict.get('range', '0-100')
 
     try:
         rmin, rmax = Range.split('-', 1)
     except ValueError:
-        rmin, rmax = '1', '5'
+        rmin, rmax = '0', '100'
 
     return rmin, rmax
 
