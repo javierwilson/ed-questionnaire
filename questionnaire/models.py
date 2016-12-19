@@ -400,6 +400,7 @@ class Answer(models.Model):
     question = models.ForeignKey(Question, help_text = u"The question that this is an answer to")
     runid = models.CharField(u'RunID', help_text = u"The RunID (ie. year)", max_length=32)
     answer = models.TextField()
+    score = models.DecimalField(null=True, blank=True, max_digits=6, decimal_places=2) # score is optional
 
     def __unicode__(self):
         return "Answer(%s: %s, %s)" % (self.question.number, self.subject.surname, self.subject.givenname)

@@ -40,7 +40,7 @@ class BoolAnd(BoolOperand):
         return True
 
 class BoolOr(BoolOperand):
-    reprsymbol = '||'    
+    reprsymbol = '||'
     def __nonzero__(self):
         for a in self.args:
             if bool(a):
@@ -133,7 +133,7 @@ True
         if not code or not code.strip():
             return False
         return bool(self.boolExpr.parseString(code)[0])
-    
+
     def toString(self, code):
         return str(self.boolExpr.parseString(code)[0])
 

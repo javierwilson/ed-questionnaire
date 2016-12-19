@@ -83,6 +83,7 @@ def add_answer(runinfo, question, answer_dict):
 
     if type in Processors:
         answer.answer = Processors[type](question, answer_dict) or ''
+        import pdb; pdb.set_trace()
     else:
         raise AnswerException("No Processor defined for question type %s" % type)
 
