@@ -405,6 +405,13 @@ class Answer(models.Model):
     def __unicode__(self):
         return "Answer(%s: %s, %s)" % (self.question.number, self.subject.surname, self.subject.givenname)
 
+    @property
+    def runid_pk(self):
+        try:
+            return RunInfoHistory.objects.get(runid=self.runid).id
+        except RunInfoHistory.DoesNotExist:
+            return None
+
     def split_answer(self):
         """
         Decode stored answer value and return as a list of choices.
