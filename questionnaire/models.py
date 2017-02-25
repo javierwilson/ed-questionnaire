@@ -383,7 +383,7 @@ class Choice(models.Model):
 
     question = models.ForeignKey(Question)
     sortid = models.IntegerField()
-    value = models.CharField(u"Short Value", max_length=64)
+    value = models.CharField(u"Short Value", max_length=120)
     text = models.CharField(u"Choice Text", max_length=200)
     tags = models.CharField(u"Tags", max_length=64, blank=True)
     score = models.DecimalField(u"Score", max_digits=5, decimal_places=2, null=True, blank=True)
